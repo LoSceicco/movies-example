@@ -1,0 +1,11 @@
+
+
+<main>
+  <div class="child-container">
+    <app-login *ngIf="isLogin"></app-login>
+    <app-signup *ngIf="!isLogin"></app-signup>
+  </div>
+  <button mat-flat-button (click)="switchMode()" color="accent" >
+    {{ getLabel() }}
+  </button>
+</main>

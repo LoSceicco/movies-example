@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Movie } from '../interfaces/movie';
 import { User, UserResponse } from '../interfaces/user';
 
 @Injectable({
@@ -36,4 +37,16 @@ export class BackendService {
       }
     )
   }
+
+  getMovies(accessToken:string):Observable<Movie[]> {
+    return this.httpClient.get<Movie[]>(
+      this.baseUrl + 'movie/popular',
+      {
+        headers: {
+          'Authorization': `Bearer ${accessToken}`
+        }
+      }
+    )
+  }
+
 }

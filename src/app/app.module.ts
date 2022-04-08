@@ -12,10 +12,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { HttpClientModule } from '@angular/common/http';
 import { MoviesComponent } from './components/movies/movies.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { MoviesComponent } from './components/movies/movies.component';
     LoginComponent,
     HomeComponent,
     SignupComponent,
-    MoviesComponent
+    MoviesComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +38,7 @@ import { MoviesComponent } from './components/movies/movies.component';
     MatInputModule,
     ReactiveFormsModule,
     HttpClientModule,
+    MatToolbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

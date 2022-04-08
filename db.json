@@ -29,6 +29,12 @@
       "password": "$2a$10$/I4/LbcQ9JkokvkiihSzyuyw2C2ik5AIoVv9iiHFHCUrfdRGLSzsy",
       "name": "gino",
       "id": 698
+    },
+    {
+      "email": "g@g.it",
+      "password": "$2a$10$EQlBVsW84X29jFReX.FDOuM59AWZXGKVqP0qkGzcwq4wq2rhTEGlO",
+      "name": "gg",
+      "id": 699
     }
   ],
   "favorites": [
